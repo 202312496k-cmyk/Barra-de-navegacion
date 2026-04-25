@@ -1,0 +1,168 @@
+/* ===== GENERAL ===== */
+body {
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif, sans-serif;
+    background-color: #b270c6;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000000;
+    height: 70px;
+    padding: 0 40px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo img {
+    height: 45px;
+}
+
+.logo h1 {
+    margin: 0;
+    color: #d1d1d1;
+}
+
+.menu {
+    display: flex;
+    gap: 25px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #dadada;
+    font-size: 18px;
+}
+
+.menu a:hover {
+    color: #000000;
+}
+
+.seccion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    padding: 40px;
+}
+
+.texto {
+    flex: 2;
+}
+
+/* BOTONES (SERVICIOS) */
+.texto button {
+    padding: 10px 15px;
+    background: #000000;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+}
+
+/* VIDEO */
+.video video {
+    width: 400px;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+/* IMAGEN */
+.imagen {
+    align-self: flex-start;
+}
+
+.imagen img {
+    width: 420px;
+    border-radius: 20px;
+}
+
+/* GALERIA */
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    gap: 20px;
+    padding: 40px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* TARJETAS */
+.card {
+    width: 220px;
+    border: 3px solid #2b89ae;
+    padding: 15px;
+    background: #73cbcc;
+    text-align: center;
+    border-radius: 15px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.card img {
+    width: 100%;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.card button {
+    margin-top: 10px;
+    padding: 8px 12px;
+    border: none;
+    background: #0d0d0d;
+    color: white;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+/* BOTON FINAL (ANTES) */
+.boton-final {
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px 40px;
+}
+
+/* 👉 BOTÓN INICIO IGUAL AL DE SERVICIOS Y FIJO */
+.boton-final {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.boton-final button {
+    padding: 10px 15px;
+    background: #000000;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+}
+
+/* BOTÓN SIGUIENTE FIJO */
+.texto a {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .galeria {
+        justify-content: center;
+    }
+}
